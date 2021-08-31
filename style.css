@@ -16,6 +16,8 @@ section {
   background-color: #f2fbff;
   padding: 2rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .productItem img {
@@ -97,15 +99,23 @@ h2 {
 }
 
 #cart {
-  background-color: #083c59;
-  padding: 0.3rem;
-  color: white;
+  background-color: #c3f7f8;
+  padding: 0.4rem;
+  display: flex;
+  color: #22577a;
   border-radius: 0.3rem;
+  margin-left: 1rem;
 }
 
 #price {
   color: #083c59;
   font-weight: 600;
+}
+
+#stock {
+  color: #ec9358;
+  margin-left: 1rem;
+  font-size: 0.85rem;
 }
 
 #productTitle {
@@ -115,4 +125,12 @@ h2 {
 #brand {
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+#goProduct {
+  background-color: #083c59;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.3rem;
+  color: white;
 }
