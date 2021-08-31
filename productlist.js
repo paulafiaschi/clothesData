@@ -14,14 +14,22 @@ function handleProductList(data) {
 }
 
 function showProduct(product) {
-  console.log(product);
   const template = document.querySelector("#small-product").content;
 
   const copy = template.cloneNode(true);
 
-  copy.querySelector(".brand").textContent = `${product.brandname}`;
-  copy.querySelector(".category").textContent = `${product.articletype}`;
-  // copy.querySelector("h3").textContent = product.productdisplayname;
+  copy
+    .querySelector("a")
+    .setAttribute("href", "productpage.html?id=" + product.id);
+
+  copy.querySelector(".brand").textContent = product.brandname;
+  copy.querySelector(".category").textContent = product.articletype;
+  copy.querySelector(".priceList").textContent = product.price + " dkk";
+  copy.querySelector("h2").textContent = product.productdisplayname;
+  copy.querySelector(
+    "img"
+  ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
+  copy.querySelector("img").alt = product.productdisplayname;
 
   const parent = document.querySelector("main");
 

@@ -71,7 +71,7 @@ h2 {
   background-color: #f4fdfd;
 }
 
-#productDisplay {
+.productDisplay {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -137,9 +137,16 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   margin: 0 2rem;
   column-gap: 1.5rem;
+  row-gap: 1.5rem;
   justify-items: center;
 }
 
 .product-list img {
   max-width: 20rem;
+}
+
+.smallProduct {
+  background-color: #f2fbff;
+  padding: 1.3rem;
+  border-radius: 0.5rem;
 }
