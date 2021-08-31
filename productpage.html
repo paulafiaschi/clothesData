@@ -44,31 +44,32 @@
     <nav class="cat-bar"> Home > Brand > T-shirts</nav>
 
 
-    <section id="productDisplay">
-      <img src="img/1163.webp" alt="" id="product-image">
-      <div>
-        <h1 id="productTitle">Sahara Team India Fanwear Round Neck Jersey </h1>
-        <h3 id="brand">Artengo</h3>
-        <p id="price">DKK 199</p>
-        <p id="size">Size: M</p>
-        <p>Quantity: 1
-          <span id="stock">only 2 left!</span>
-        </p>
-
-        <div id="buttons">
-          <p> <span class="material-icons">
-              favorite_border
-            </span></p>
-          <a href="" id="cart"><span class="material-icons">
-              shopping_cart
-            </span> Add to cart</a>
-
+    <template id="smallProductTemplate">
+      <article class="productDisplay">
+        <img src="img/1163.webp" alt="" id="product-image">
+        <div>
+          <h1 class="productTitle">Sahara Team India Fanwear Round Neck Jersey </h1>
+          <h3 class="brand">Artengo</h3>
+          <p class="price">DKK 199</p>
+          <p class="size">Size: M</p>
+          <p>Quantity: 1
+            <span class="stock">only 2 left!</span>
+          </p>
+          <div class="buttons">
+            <p> <span class="material-icons">
+                favorite_border
+              </span></p>
+            <a href="" id="cart"><span class="material-icons">
+                shopping_cart
+              </span> Add to cart</a>
+          </div>
         </div>
-
-      </div>
-    </section>
+      </article>
+    </template>
 
   </main>
+
+  <script src="product.js"></script>
 </body>
 
 </html>

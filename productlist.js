@@ -19,8 +19,8 @@ function showProduct(product) {
 
   const copy = template.cloneNode(true);
 
-  copy.querySelector("#brand").textContent = `${product.brandname}`;
-  copy.querySelector("#category").textContent = `${product.articletype}`;
+  copy.querySelector(".brand").textContent = `${product.brandname}`;
+  copy.querySelector(".category").textContent = `${product.articletype}`;
   // copy.querySelector("h3").textContent = product.productdisplayname;
 
   const parent = document.querySelector("main");

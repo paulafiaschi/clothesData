@@ -51,11 +51,11 @@ h2 {
   font-size: 1.25rem;
 }
 
-#categories {
+.categories {
   list-style-type: none;
 }
 
-#categories li {
+.categories li {
   color: #22577a;
   padding: 1rem;
   width: 20rem;
@@ -67,7 +67,7 @@ h2 {
   color: white;
 }
 
-#categories li:hover {
+.categories li:hover {
   background-color: #f4fdfd;
 }
 
@@ -79,23 +79,23 @@ h2 {
   column-gap: 2rem;
 }
 
-#product-image {
+.product-image {
   margin-left: auto;
   margin-right: auto;
 }
 
-#buttons {
+.buttons {
   display: flex;
   list-style-type: none;
   align-items: center;
   margin-block-start: 0;
 }
 
-#buttons li {
+.buttons li {
   margin-right: 2rem;
 }
 
-#cart {
+.cart {
   background-color: #c3f7f8;
   padding: 0.4rem;
   display: flex;
@@ -104,27 +104,27 @@ h2 {
   margin-left: 1rem;
 }
 
-#price {
+.price {
   color: #083c59;
   font-weight: 600;
 }
 
-#stock {
+.stock {
   color: #ec9358;
   margin-left: 1rem;
   font-size: 0.85rem;
 }
 
-#productTitle {
+.productTitle {
   text-transform: uppercase;
 }
 
-#brand {
+.brand {
   font-weight: 600;
   font-size: 1.2rem;
 }
 
-#goProduct {
+.goProduct {
   background-color: #083c59;
   border-radius: 0.3rem;
   border: none;
