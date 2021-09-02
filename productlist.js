@@ -20,6 +20,8 @@ function showProduct(product) {
 
   const copy = template.cloneNode(true);
 
+  const discounted = product.price - (product.price * product.discount) / 100;
+
   copy
     .querySelector("a")
     .setAttribute("href", "productpage.html?id=" + product.id);
@@ -29,6 +31,8 @@ function showProduct(product) {
   copy.querySelector(".category").textContent = product.articletype;
   copy.querySelector(".priceList").textContent = product.price + " dkk";
   copy.querySelector("h2").textContent = product.productdisplayname;
+  copy.querySelector(".onSale").textContent =
+    "sale: " + discounted.toFixed(0) + " dkk";
   copy.querySelector(
     "img"
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
