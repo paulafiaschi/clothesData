@@ -43,8 +43,8 @@ function showProduct(product) {
     copy.querySelector("article").classList.add("soldOut");
   }
   if (product.discount) {
-    copy.querySelector(".discount").classList.add("visible");
     copy.querySelector(".onSale").classList.add("visible");
+    copy.querySelector(".discount").classList.add("visible");
     copy.querySelector(".priceList").classList.add("invisible");
   }
 

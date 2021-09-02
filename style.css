@@ -173,17 +173,17 @@ h2 {
 }
 
 .onSale {
-  color: red;
+  color: rgb(199, 30, 30);
+  margin-left: 1rem;
   display: none;
 }
 
 .discount {
-  background-color: #c3f7f8;
+  background-color: rgb(199, 30, 30);
   padding: 0.3rem;
   border-radius: 0.3rem;
-  color: #083c59;
-  margin-right: 0.5rem;
-  margin-left: 3rem;
+  color: white;
+  margin-left: 0.5rem;
   display: none;
 }
 
