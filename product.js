@@ -11,9 +11,6 @@ fetch(url)
 function showProduct(product) {
   console.log(product);
 
-  // const template = document.querySelector("#smallProductTemplate").content;
-  // const copy = template.cloneNode(true);
-
   document.querySelector(".productDisplay .brand").textContent =
     product.brandname;
 

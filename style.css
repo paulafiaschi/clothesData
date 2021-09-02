@@ -141,6 +141,10 @@ h2 {
   justify-items: center;
 }
 
+.product-list h1 {
+  grid-column: 1/4;
+}
+
 .product-list img {
   max-width: 20rem;
 }
@@ -149,4 +153,36 @@ h2 {
   background-color: #f2fbff;
   padding: 1.3rem;
   border-radius: 0.5rem;
+}
+
+.prices {
+  display: flex;
+}
+
+.soldOut img {
+  opacity: 0.5;
+}
+.product-list article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background-color: #22577a;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.onSale {
+  color: red;
+
+  display: none;
+  margin-left: 1rem;
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  text-decoration: line-through;
+  text-decoration-color: red;
 }

@@ -24,6 +24,7 @@ function showProduct(product) {
     .querySelector("a")
     .setAttribute("href", "productpage.html?id=" + product.id);
 
+  document.querySelector("h1").textContent = product.season;
   copy.querySelector(".brand").textContent = product.brandname;
   copy.querySelector(".category").textContent = product.articletype;
   copy.querySelector(".priceList").textContent = product.price + " dkk";
@@ -32,6 +33,14 @@ function showProduct(product) {
     "img"
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
   copy.querySelector("img").alt = product.productdisplayname;
+
+  if (product.soldout) {
+    copy.querySelector("article").classList.add("soldOut");
+  }
+  if (product.discount) {
+    copy.querySelector(".onSale").classList.add("visible");
+    copy.querySelector(".priceList").classList.add("invisible");
+  }
 
   const parent = document.querySelector("main");
 
