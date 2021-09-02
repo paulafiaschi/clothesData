@@ -157,6 +157,7 @@ h2 {
 
 .prices {
   display: flex;
+  align-items: center;
 }
 
 .soldOut img {
@@ -173,9 +174,17 @@ h2 {
 
 .onSale {
   color: red;
-
   display: none;
-  margin-left: 1rem;
+}
+
+.discount {
+  background-color: #c3f7f8;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  color: #083c59;
+  margin-right: 0.5rem;
+  margin-left: 3rem;
+  display: none;
 }
 
 .visible {
@@ -185,4 +194,5 @@ h2 {
 .invisible {
   text-decoration: line-through;
   text-decoration-color: red;
+  color: rgb(110, 110, 110);
 }

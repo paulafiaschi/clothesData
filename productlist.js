@@ -30,9 +30,10 @@ function showProduct(product) {
   copy.querySelector(".brand").textContent = product.brandname;
   copy.querySelector(".category").textContent = product.articletype;
   copy.querySelector(".priceList").textContent = product.price + " dkk";
+  copy.querySelector(".discount").textContent = "-" + product.discount + "%";
+  copy.querySelector(".onSale").textContent = discounted.toFixed(0) + " dkk";
   copy.querySelector("h2").textContent = product.productdisplayname;
-  copy.querySelector(".onSale").textContent =
-    "sale: " + discounted.toFixed(0) + " dkk";
+
   copy.querySelector(
     "img"
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
@@ -42,6 +43,7 @@ function showProduct(product) {
     copy.querySelector("article").classList.add("soldOut");
   }
   if (product.discount) {
+    copy.querySelector(".discount").classList.add("visible");
     copy.querySelector(".onSale").classList.add("visible");
     copy.querySelector(".priceList").classList.add("invisible");
   }
@@ -50,14 +52,3 @@ function showProduct(product) {
 
   parent.appendChild(copy);
 }
-
-/*
-<article class="smallProduct">
-<div class="productItem">
-  <img src="img/1163.webp" alt="">
-  <h2>Sahara Team India Fanwear Round Neck Jersey</h2>
-  <p><span id="brand">Nike</span> --- <span id="category">T-shirt</span></p>
-  <p id="priceList">DKK 199</p>
-  <a href="productpage.html?id=1165"><button id="goProduct">See more</button></a>
-</div>
-</article>*/
