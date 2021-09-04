@@ -199,3 +199,29 @@ h2 {
   text-decoration-color: red;
   color: rgb(110, 110, 110);
 }
+
+.seasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 30vw;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.seasons li {
+  background-color: #083c59;
+  height: 20rem;
+  position: relative;
+  justify-content: space-around;
+}
+.seasons li:hover {
+  background-color: #c3f7f8;
+}
+
+.seasons a {
+  color: white;
+  align-self: center;
+}
